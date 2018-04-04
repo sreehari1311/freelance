@@ -87,8 +87,11 @@ public class ProjectServiceImpl implements ProjectService {
 		}
 		Project projectResponse = new Project();
 		FreelanceUtils.copyProperties(projectEntity, projectResponse);
-		projectResponse.setMinimumBid(bidService.getMinimumBidByProject(projectId).getResponse());
-
+		Response<Bid> minimumBidResponse = bidService.getMinimumBidByProject(projectId);
+		if(minimumBidResponse != null){
+			projectResponse.setMinimumBid(minimumBidResponse.getResponse());
+		}
+		
 		return new Response<Project>(projectResponse);
 	}
 

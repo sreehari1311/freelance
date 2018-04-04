@@ -26,6 +26,16 @@ public class ProjectRestController {
  		return projectService.createProject(project);
 	}
 	
+	@RequestMapping(method = RequestMethod.PUT, value = { "/projects/{projectId}" }, produces = "application/json")
+	public Response<Project> updateProject(@Valid @RequestBody Project project,@PathVariable(value = "projectId") Long projectId) {
+		project.setId(projectId);
+ 		return projectService.updateProject(project);
+	}
+	@RequestMapping(method = RequestMethod.DELETE, value = { "/projects/{projectId}" }, produces = "application/json")
+	public Response<Project> deleteProject(@PathVariable(value = "projectId") Long projectId) {
+ 		return projectService.deleteProject(projectId);
+	}
+	
 	@RequestMapping(method = RequestMethod.GET, value = { "/projects/{projectId}" }, produces = "application/json")
 	public Response<Project> getProject(@PathVariable(value = "projectId") Long projectId) {
  		return projectService.findProjectById(projectId);
