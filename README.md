@@ -1,4 +1,4 @@
-# Freelance Rest API
+# Freelance Rest API Assignment
 
 Spring Rest API for freelance project submission and bidding
 ```
@@ -7,6 +7,20 @@ Spring Rest API for freelance project submission and bidding
   2) CRUD operations on bid 
   3) Anouncing winner of the bid is a daimon process which check the announcement in specific interval
      Developed using quarts scheduler
+
+```
+### Notes about the assignment
+```
+*The time the exercise took (after dev environment is set up)
+3 hours
+*Exercise Difficulty: Easy, Moderate, Difficult, Very Difficult
+Moderate
+*How did you feel about the exercise itself? (1 lowest, 10 highest—awesome way to assess coding ability)
+7
+*How do you feel about coding an exercise as a step in the interview process?  (1 lowest, 10 highest—awesome way to assess coding ability)
+Great way to assess 
+*What would you change in the exercise and/or process?
+- Add few data structure and algorithamic use cases along with the application
 ```
 ### Database
 ```
