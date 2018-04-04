@@ -4,7 +4,7 @@ Spring Rest API for freelance project submission and bidding
 ```
   This API is designed to perform following operations
   1) CRUD operations on project
-  2) CRUD operations on update 
+  2) CRUD operations on bid 
   3) Anouncing winner of the bid is a daimon process which check the announcement in specific interval
      Developed using quarts scheduler
 ```
