@@ -12,6 +12,8 @@ Spring Rest API for freelance project submission and bidding
 ```
 Database is H2 (java in-memory) database
 schema can be find in resource folder
+To access database
+http://localhost:8080/h2
 ```
 ### Libraries And Framework
 ```
