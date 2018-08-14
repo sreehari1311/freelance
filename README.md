@@ -128,19 +128,7 @@ Request Body
    "userId":"testing"
 }
 
-```
-####  Update Bid
-```
-End point: /api/v1/bids/{bidId}
-Method: PUT
-Request Body
-{
-	"projectId":97,
-   "bidAmount":1000,
-   "userId":"testing"
-}
-
-```
+ 
  
 ####  Delete Bid
 ```
